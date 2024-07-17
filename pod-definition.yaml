@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-definition
+  labels:
+    app: nginx
+    type: front-end
+spec:
+  matchLabels:
+    app: nginx
+  containers:
+  - name: nginx
+    image: nginx
